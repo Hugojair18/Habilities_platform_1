@@ -1,0 +1,144 @@
+/* Contenedor principal que ocupa toda la pantalla */
+.results-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  min-height: 100vh;
+  background: linear-gradient(135deg, #5f758c, #5f758c);
+}
+
+.top-container {
+  display: flex;
+  justify-content: space-evenly; /* O `justify-content: center;` para centrar los elementos */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.middle-container {
+  display: flex;
+  justify-content: space-between; /* O `justify-content: center;` para centrar los elementos */
+}
+
+.bottom-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap; 
+  flex-direction: row;
+  margin-top: 20px; /* Espacio entre los bloques */
+}
+
+/* Card central para mostrar resultados */
+.results-card {
+  width: 300px; /* Ajusta el ancho según prefieras */
+  padding: 20px;
+  border-radius: 12px;
+  /*background-color: white;*/
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+/* Título principal */
+.results-title {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Lista de resultados */
+.results-list {
+  list-style: none;
+  padding-left: 0;
+  text-align: right; /* Alinea el texto a la izquierda para ver mejor cada item */
+  margin: 20px 0;
+}
+
+/* Cada elemento de la lista */
+.results-list li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.4;
+}
+
+/* Resalta el nombre de la habilidad con el color guinda */
+.results-skill-name {
+  font-weight: bold;
+  color: #5b0d1f;
+}
+
+/* Si quieres estilos para los puntajes o niveles, usa una clase similar */
+.results-skill-score {
+  font-weight: normal;
+  color: #333; /* Gris oscuro */
+  margin-left: 5px;
+}
+
+/* Botón de "Regresar" u otros botones, si los incluyes */
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #5b0d1f;
+  border: none;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #8a172f;
+}
+
+/* Si quieres estilos secundarios o de alerta, repítelos */
+.btn-secondary {
+  background-color: #d3d3d3;
+  color: black;
+}
+
+.btn-danger {
+  background-color: #ab3d4c;
+  border: none;
+  color: #fff;
+}
+.btn-danger:hover {
+  background-color: #8a172f;
+}
+
+.icon {
+  margin-left: 10px;
+}
+
+.card-muy-bajo {
+  background-color: #f8d7da; /* Rojo claro */
+  border: 2px solid #dc3545; /* Rojo */
+}
+
+.card-bajo {
+  background-color: #eecc9c; /* Amarillo claro */
+  border: 2px solid #ffc107; /* Amarillo */
+}
+
+.card-medio {
+  background-color: #fff86f; /* Naranja claro */
+  border: 2px solid #ffecb5; /* Naranja */
+}
+
+.card-alto {
+  background-color: #d4edda; /* Verde claro */
+  border: 2px solid #28a745; /* Verde */
+}
+
+.card-muy-alto {
+  background-color: #c3e6cb; /* Verde más claro */
+  border: 2px solid #218838; /* Verde */
+}
